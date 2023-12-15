@@ -1,10 +1,13 @@
 import React from "react";
+import styles from "../../Styles/scss/card.module.scss";
 
 // Definindo o componente funcional
 function skills() {
+  //aqui eu posso colocar um card com as linguagens que domino com -
+  //um timeline ou um arrow entre os cards, ai os cards ficam sobrepostos na linha
   return (
-    <div>
-      <h1>Hello, World!</h1>
+    <div className={styles.card}>
+      <h2>Skills</h2>
     </div>
   );
 }
