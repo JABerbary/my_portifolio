@@ -1,0 +1,31 @@
+.navbar {
+    margin-left: auto;
+  }
+.navigation {
+    height: 60px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    padding: 0.5rem 0rem;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  .navbar li {
+    // removes default disc bullet for li tags and applies margin to left & right side
+    list-style-type: none;
+    margin: 0 1rem;
+
+  }
+  .navbar li a {
+    // increases the surface area of the anchor tag to span more than just the anchor text
+    text-decoration: none;    display: flex;
+
+    display: block;
+    width: 100%;
+  }

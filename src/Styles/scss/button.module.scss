@@ -1,0 +1,29 @@
+/* styles.css (ou qualquer outro nome de arquivo CSS) */
+
+/* Reset de estilos padrão do botão */
+button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+    outline: none;
+  }
+  
+  /* Estilo do botão */
+  button {
+    background-color: #3498db; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno (ajuste conforme necessário) */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: 5px; /* Borda arredondada */
+    transition: background-color 0.3s ease; /* Transição suave na mudança de cor de fundo */
+  
+    /* Adicione mais estilos conforme necessário */
+  }
+  
+  /* Hover no botão */
+  button:hover {
+    background-color: #2980b9; /* Cor de fundo quando hover */
+  }
