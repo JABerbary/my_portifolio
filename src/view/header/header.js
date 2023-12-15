@@ -1,6 +1,5 @@
 //crate name
 
-import Card from "../../components/cards/cardAbout";
 import Navbar from "../../components/navbar/navbar";
 import QuemSou from "../../view/main/about";
 import Experiencia from "../../view/main/experiencia";
@@ -30,6 +29,8 @@ const Header = () => {
           </Switch>
           <QuemSou sobre="Formado em análise e desenvolvimento de sistemas blablabla"></QuemSou>
           <Experiencia />
+          <Portifolio />
+          <Skills />
         </Router>
       </div>
     </header>

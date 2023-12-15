@@ -1,10 +1,11 @@
 import React from "react";
-
-const Footer = ({ date }) => {
+import styles from "../../Styles/scss/card.module.scss";
+import Contato from "../../view/main/contato";
+const Footer = () => {
   return (
     <footer>
-      <div className="footer-wrapper">
-        <p>Copyright {date.getFullYear()}</p>
+      <div>
+        <Contato />
       </div>
     </footer>
   );
