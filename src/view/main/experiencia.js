@@ -1,6 +1,6 @@
 import React from "react";
 import Timeline from "../../components/timeline/timeline";
-import styles from "../../Styles/scss/card.module.scss";
+import styles from "../../styles/scss/card.module.scss";
 import InputButton from "../../components/inputs/inputButton";
 
 // Definindo o componente funcional

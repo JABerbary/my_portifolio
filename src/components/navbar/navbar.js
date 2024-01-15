@@ -1,6 +1,6 @@
 // Navbar.js
 import React from "react";
-import styles from "../../Styles/scss/navbar.module.scss";
+import styles from "../../styles/scss/navbar.module.scss";
 
 import { Link } from "react-router-dom"; // Certifique-se de instalar 'react-router-dom' se não estiver instalado
 const Navbar = () => {

@@ -1,0 +1,39 @@
+.App {
+    height: 100%;
+    background-color: var(--light-background);
+  }
+
+  @keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    } 100% {
+        transform: translateX(25%);
+    }
+}
+.theme-light {
+  background-image: linear-gradient(-60deg, #64505c 50%,#DBE7E4 50%); 
+  background-size: cover;
+  --dark-text: #5E4B56;
+  --accent: #dbe7e4;
+  --button-border: #5E4B56;
+  --dark-background: #DBE7E4;
+  --light-text: #5E4B56;
+  --light-background: #EDDCD2;
+}
+
+.theme-dark {
+  background-image: linear-gradient(-60deg, #292929 50%, #2a3b46 50%);
+  background-size: cover;
+  --dark-text: #292929;
+  --dark-background: #2F4550;
+  --light-background: #586F7C;
+  --accent: #b8dbd9; 
+  --button-border: #b8dbd9;
+  --light-text: #F9F8F8;
+}
+
+html, body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
