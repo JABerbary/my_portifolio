@@ -1,24 +1,28 @@
+// App.js
+import React, { useEffect, useState } from "react";
 import Header from "./view/header/header";
 import Footer from "./view/footer/footer";
 import InputToggleDark from "./components/inputs/inputToggleDark";
-import InputToggleLanguage from "./hooks/ToggleButtonLanguage";
+import ToggleButtonLanguage from "./hooks/ToggleButtonLanguage";
 import { keepTheme } from "./components/utils/theme";
-import React, { useEffect, useState } from "react";
 
 function App() {
   const [className, setClassName] = useState("theme-dark");
+  const [isPT, setIsPT] = useState(true);
 
   useEffect(() => {
     keepTheme(setClassName);
-  }, [setClassName]);
-  useEffect(() => {
-    keepTheme(setlanguage);
-  }, [setClassLanguage]);
+  }, [className]);
+
+  const handleLanguageToggle = (value) => {
+    setIsPT(value);
+  };
+
   return (
     <div className={`App ${className}`}>
       <InputToggleDark setClassName={setClassName} />
-      <InputToggleLanguage setlanguage={setlanguage} />
-      <Header />
+      <ToggleButtonLanguage onChange={handleLanguageToggle} />
+      <Header language={isPT ? "pt" : "en"} />
       <Footer />
     </div>
   );

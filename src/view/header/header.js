@@ -7,26 +7,24 @@ import Contato from "../../view/main/contato";
 import styles from "../../styles/scss/global.module.scss";
 import Typewriter from "typewriter-effect";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import translations from "../../components/utils/translations";
 
 //navbar
-const Header = () => {
+const Header = ({ language }) => {
+  const translation = translations[language];
   return (
     <header>
       <div className="header-wrapper">
         <span className={`${styles.title}`}>
           <div className="main text-center mb-3">
-            Hi, I am
+            {translation.greeting}
             <br />
             <span>
-              <strong>Augusto Berbary👋</strong>
+              <strong>{translation.name}</strong>
             </span>
             <Typewriter
               options={{
-                strings: [
-                  "FullStack Developer",
-                  "Tech Enthusiast",
-                  "Game Dev Student",
-                ],
+                strings: translation.roles,
                 autoStart: true,
                 loop: true,
                 delay: 50,
