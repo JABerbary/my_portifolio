@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../Styles/scss/card.module.scss";
+import styles from "../../styles/scss/card.module.scss";
 
 const QuemSou = ({ sobre }) => {
   return (
