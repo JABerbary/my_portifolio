@@ -193,6 +193,7 @@
 }
 
 .switch {
+  position: relative; // Adiciona posição relativa para o posicionamento absoluto do ::before
   width: 60px;
   height: 30px;
   border-radius: 15px;
@@ -204,21 +205,9 @@
   font-weight: bold;
   transition: background-color 0.3s ease-in-out;
 
-  // Adicione a animação do cursor aqui
-  &::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    background-color: transparent;
-    mix-blend-mode: difference;
-    pointer-events: none;
-    transform-origin: center;
-    animation: runCursor 2s linear infinite;
-  }
+
 }
+
 
 .pt {
   background-color: #4caf50; /* cor para PT */
@@ -228,12 +217,3 @@
   background-color: #2196f3; /* cor para EN */
 }
 
-@keyframes runCursor {
-  0%, 100% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(100%);
-  }
-}

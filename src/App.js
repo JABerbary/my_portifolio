@@ -14,16 +14,20 @@ function App() {
     keepTheme(setClassName);
   }, [className]);
 
-  const handleLanguageToggle = (value) => {
-    setIsPT(value);
+  const handleLanguageToggle = (checked) => {
+    setIsPT(checked);
   };
 
   return (
     <div className={`App ${className}`}>
       <InputToggleDark setClassName={setClassName} />
-      <ToggleButtonLanguage onChange={handleLanguageToggle} />
-      <Header language={isPT ? "pt" : "en"} />
-      <Footer />
+      <ToggleButtonLanguage
+        id="isPT"
+        checked={isPT}
+        onChange={handleLanguageToggle}
+      />
+      <Header language={isPT ? "en" : "pt"} />
+      {/* <Footer /> */}
     </div>
   );
 }
